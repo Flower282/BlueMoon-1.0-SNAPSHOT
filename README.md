@@ -59,7 +59,10 @@ Kiểm tra container đang chạy:
 ```
 docker ps
 ```
-Nếu thấy container `bluemoon-container` trong danh sách, bạn đã chạy thành công!
+Nếu thấy container `bluemoon-container` trong danh sách, bạn đã chạy thành công!  
+## Do yêu cầu bảo mật và xác thực thông tin, ứng dụng không cho phép tự tạo tài khoản, bạn có thể dùng tài khoản sau để đăng nhập:  
+username: `admin@gmail.com`  
+password: `admin`  
 ## Dừng & Xóa container  
 Nếu bạn muốn dừng container đang chạy:  
 ```
@@ -82,7 +85,9 @@ Hoặc kiểm tra lỗi Docker:
 ```
 sudo systemctl status docker
 ```  
-Nếu bạn gặp lỗi, vui lòng liên hệ hoặc tạo **issue** trên repository GitHub.
+Nếu bạn gặp lỗi, vui lòng liên hệ hoặc tạo **issue** trên repository GitHub.  
+  
+*Dự án vẫn đang tiếp tục phát triển nên có nhiều chức năng còn chưa hoàn thiện, hãy thường xuyên cập nhật để có thể trải nghiệm đầy đủ chức năng nhé!*
 
 
 
