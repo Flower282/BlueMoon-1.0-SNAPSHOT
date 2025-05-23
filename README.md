@@ -46,13 +46,18 @@ Chạy lệnh sau để cho phép container kết nối với X server:
 ```
 set DISPLAY=host.docker.internal:0.0
 ```
-**Mac/Linux**:
+**Mac/Linux**:  
+Cài biến môi trường:
 ```
 export DISPLAY=$(ip route | awk '/default/ {print $3}'):0
 ```  
 Chạy container với biến môi trường DISPLAY:
 ```
-docker run --name bluemoon-container -e DISPLAY=$DISPLAY -d ghcr.io/flower282/bluemoon:1.0
+sudo docker run --name bluemoon-container \
+    -e DISPLAY=$DISPLAY \
+    -v /tmp/.X11-unix:/tmp/.X11-unix \
+    -d ghcr.io/flower282/bluemoon-app:1.0@sha256:add812071818e9aac169b7eb487b2acc303d8e1599895380b3e5e514d97df01a
+
 ```  
 **Giải thích lệnh**:  
 -    `-e DISPLAY=$DISPLAY` → Truyền biến môi trường để container có thể kết nối X server.
