@@ -30,6 +30,7 @@ Nếu thấy `ghcr.io/flower282/bluemoon` xuất hiện trong danh sách, bạn 
 **Windows**: Cài đặt VcXsrv từ [link này](https://vcxsrv.com/) và cài đặt.  
 -    Chạy **XLaunch**, chọn **Multiple windows**, và đặt **Display number = 0**.
 -    Tick **Disable Access Control** để container có thể kết nối.
+
 **MacOS**: Cài đặt **XQuartz**:
 ```
 brew install --cask xquartz
@@ -37,6 +38,7 @@ brew install --cask xquartz
 -    Chạy **XQuartz**, vào Preferences > Security > Tick **Allow connections from network clients**.
 
 -    Khởi động lại XQuartz.
+
 **Linux**: Nếu bạn sử dụng môi trường đồ họa X11, chỉ cần đảm bảo X11 đã được cài đặt.
 ### 2. Chạy container với hỗ trợ GUI  
 Chạy lệnh sau để cho phép container kết nối với X server:
