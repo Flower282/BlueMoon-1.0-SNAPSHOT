@@ -17,7 +17,7 @@ Nếu bạn chưa có Docker, hãy tải và cài đặt theo hướng dẫn dư
 ## Lấy image từ GHCR  
 Chạy lệnh sau để tải image `bluemoon:1.0` về máy:
 ```
-docker pull ghcr.io/flower282/bluemoon:1.0
+docker pull ghcr.io/flower282/bluemoon-app:1.0@sha256:add812071818e9aac169b7eb487b2acc303d8e1599895380b3e5e514d97df01a
 ```  
 Kiểm tra image đã tải về:  
 ```
